@@ -2,7 +2,7 @@ class Zerobrew < Formula
   desc "Fast package manager for Homebrew packages, written in Rust"
   homepage "https://github.com/zerobrewhq/zerobrew"
   # Explicit: Homebrew misreads the version from binary names like zb-linux-x64.
-  version "0.4.1"
+  version "0.4.2"
   license all_of: ["Apache-2.0", "MIT"]
 
   livecheck do
@@ -12,42 +12,42 @@ class Zerobrew < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/zerobrewhq/zerobrew/releases/download/v0.4.1/zb-darwin-arm64"
-      sha256 "eb8fd97bc3605767f0239e998ef9192d92bd8f1731d9be17d530b00624725101"
+      url "https://github.com/zerobrewhq/zerobrew/releases/download/v0.4.2/zb-darwin-arm64"
+      sha256 "c58b0167df1da80f7daf65caf3815150b1eaf369991867da9fe087155e3f98dc"
 
       resource "zbx" do
-        url "https://github.com/zerobrewhq/zerobrew/releases/download/v0.4.1/zbx-darwin-arm64"
-        sha256 "cb88cba7bf6ff93993049cb4cb5e2edc552924fa3733e86b386819d29d75aca1"
+        url "https://github.com/zerobrewhq/zerobrew/releases/download/v0.4.2/zbx-darwin-arm64"
+        sha256 "8dda57c208c829f73456a55a5c6cd154584e2b80179aaf063f30c4e8a0beab45"
       end
     end
     on_intel do
-      url "https://github.com/zerobrewhq/zerobrew/releases/download/v0.4.1/zb-darwin-x64"
-      sha256 "4a3a6a7ead0d14de6c67a52d515bfa173c8b4e7f087b94db401c37eb1cdf4416"
+      url "https://github.com/zerobrewhq/zerobrew/releases/download/v0.4.2/zb-darwin-x64"
+      sha256 "51089e993a22a676cc7d25a2c733c367acff2de4005508a97b692aab790ff2da"
 
       resource "zbx" do
-        url "https://github.com/zerobrewhq/zerobrew/releases/download/v0.4.1/zbx-darwin-x64"
-        sha256 "8d9c7b5cdf14b81b2bdd99aaaa16ec83daa1ef64b5bcda01ed611480d4907bf6"
+        url "https://github.com/zerobrewhq/zerobrew/releases/download/v0.4.2/zbx-darwin-x64"
+        sha256 "450f2079fa8bf3e57dba19b58709a6fed12f850a62fa4fdd7801c6adb730047d"
       end
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/zerobrewhq/zerobrew/releases/download/v0.4.1/zb-linux-arm64"
-      sha256 "fb3d5f44fd2d6fb6dea6bb303f665f8fbb683ef06791313414de1d4487d56a96"
+      url "https://github.com/zerobrewhq/zerobrew/releases/download/v0.4.2/zb-linux-arm64"
+      sha256 "5a3c3d37884bfd2e3c4283f28432543826e2e350c309c579d93c4cd735348374"
 
       resource "zbx" do
-        url "https://github.com/zerobrewhq/zerobrew/releases/download/v0.4.1/zbx-linux-arm64"
-        sha256 "eed2e11c2b827f24b4074d81f5f58291eaba2e0d44fd72501819e63752d2b0e1"
+        url "https://github.com/zerobrewhq/zerobrew/releases/download/v0.4.2/zbx-linux-arm64"
+        sha256 "12fc260ca93deaf19de6b86fd496d32dcd94268ac05410f75fe3bac9c9ac1340"
       end
     end
     on_intel do
-      url "https://github.com/zerobrewhq/zerobrew/releases/download/v0.4.1/zb-linux-x64"
-      sha256 "471b4735efbb07ff6affb985df455d6c8e67a292878c3d00912ad7942639002d"
+      url "https://github.com/zerobrewhq/zerobrew/releases/download/v0.4.2/zb-linux-x64"
+      sha256 "a70770ec75e124b43b91e90828d1e60c03a6361c47f5a35ed2ad3eb1051fb014"
 
       resource "zbx" do
-        url "https://github.com/zerobrewhq/zerobrew/releases/download/v0.4.1/zbx-linux-x64"
-        sha256 "7ae8a38c679efc95a3b90620e5549b51fae5af0b3bc358b092b889dbb6c3df8f"
+        url "https://github.com/zerobrewhq/zerobrew/releases/download/v0.4.2/zbx-linux-x64"
+        sha256 "e3af1bfb92113ee66515a1f99eb96bb93a564472ce270467d9f2087062fbb510"
       end
     end
   end
