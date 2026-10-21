@@ -20,5 +20,5 @@ jobs:
 
       - name: Install and test
         run: |
-          brew install zerobrewhq/zerobrew/zerobrew
-          brew test zerobrewhq/zerobrew/zerobrew
+          brew install zerobrewhq/tap/zerobrew
+          brew test zerobrewhq/tap/zerobrew

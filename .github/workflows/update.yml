@@ -53,8 +53,8 @@ jobs:
       - name: Install and test
         if: steps.release.outputs.changed == 'true'
         run: |
-          brew install zerobrewhq/zerobrew/zerobrew
-          brew test zerobrewhq/zerobrew/zerobrew
+          brew install zerobrewhq/tap/zerobrew
+          brew test zerobrewhq/tap/zerobrew
           zb --version | grep -F "${{ steps.release.outputs.version }}"
 
       # setup-homebrew rebuilds the tap's git setup, dropping the branch's
