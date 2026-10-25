@@ -75,6 +75,8 @@ class Zerobrew < Formula
   def install
     bin.install Dir["zb-*"].first => "zb"
     resource("zbx").stage { bin.install Dir["zbx-*"].first => "zbx" }
+    system bin/"zb", "man", "--out-dir", buildpath/"man"
+    man1.install Dir[buildpath/"man/*.1"]
   end
 
   def caveats
@@ -86,6 +88,7 @@ class Zerobrew < Formula
   test do
     assert_match version.to_s, shell_output("#{bin}/zb --version")
     assert_match "Usage: zb run", shell_output("#{bin}/zbx --help")
+    assert_path_exists man1/"zb.1"
   end
 end
 EOF
